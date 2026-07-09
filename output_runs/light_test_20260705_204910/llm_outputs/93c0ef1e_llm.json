@@ -1,0 +1,11 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Lost or Stolen Payment Cards\",\n  \"final_route\": \"Find Debit Card\",\n  \"action\": \"Request for debit card details\",\n  \"response_to_customer\": \"I'm happy to help you report your lost debit card. Can you please provide me with the last four digits of your card and the phone number associated with it?\",\n  \"confidence\": 0.9,\n  \"explanation_short\": \"No route tree provided, so using top-level route for lost or stolen payment cards\" \n}",
+  "parsed_output": {
+    "top_level_route": "Lost or Stolen Payment Cards",
+    "final_route": "Find Debit Card",
+    "action": "Request for debit card details",
+    "response_to_customer": "I'm happy to help you report your lost debit card. Can you please provide me with the last four digits of your card and the phone number associated with it?",
+    "confidence": 0.9,
+    "explanation_short": "No route tree provided, so using top-level route for lost or stolen payment cards"
+  }
+}

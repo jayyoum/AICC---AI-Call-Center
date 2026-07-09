@@ -1,0 +1,52 @@
+{
+  "description": "Banking AICC test route tree for local LLM routing experiments.",
+  "routes": [
+    {
+      "name": "Card Services",
+      "sub_routes": [
+        { "name": "Lost or Stolen Card" },
+        { "name": "Fraud or Suspicious Transaction" },
+        { "name": "Card Declined or Not Working" },
+        { "name": "PIN or Card Activation" }
+      ]
+    },
+    {
+      "name": "Transfers and Payments",
+      "sub_routes": [
+        { "name": "Failed Transfer" },
+        { "name": "Bill Payment Issue" },
+        { "name": "Scheduled Transfer" },
+        { "name": "Person-to-Person Payment" }
+      ]
+    },
+    {
+      "name": "Account Access",
+      "sub_routes": [
+        { "name": "Login or Password Help" },
+        { "name": "Locked Account" },
+        { "name": "Change Contact Information" }
+      ]
+    },
+    {
+      "name": "Deposits and ATM",
+      "sub_routes": [
+        { "name": "ATM Withdrawal Issue" },
+        { "name": "ATM Deposit Issue" },
+        { "name": "Direct Deposit" }
+      ]
+    },
+    {
+      "name": "Human Escalation",
+      "sub_routes": [
+        { "name": "Request Human Agent" },
+        { "name": "Safety or High-Risk Issue" }
+      ]
+    },
+    {
+      "name": "Out of Scope",
+      "sub_routes": [
+        { "name": "Unsupported Service" }
+      ]
+    }
+  ]
+}

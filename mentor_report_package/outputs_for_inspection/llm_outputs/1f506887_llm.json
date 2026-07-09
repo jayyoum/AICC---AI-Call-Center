@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Transfers and Payments\",\n  \"final_route\": \"Scheduled Transfer\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"Can you confirm your account details so we can proceed with the transfer?\",\n  \"confidence\": 0.5,\n  \"explanation_short\": \"The customer wants to change a scheduled transfer, so I'm routing to the Scheduled Transfer final route.\",\n  \"route_tree_used\": true\n}",
+  "parsed_output": {
+    "top_level_route": "Transfers and Payments",
+    "final_route": "Scheduled Transfer",
+    "action": "route",
+    "response_to_customer": "Can you confirm your account details so we can proceed with the transfer?",
+    "confidence": 0.5,
+    "explanation_short": "The customer wants to change a scheduled transfer, so I'm routing to the Scheduled Transfer final route.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": false
+}

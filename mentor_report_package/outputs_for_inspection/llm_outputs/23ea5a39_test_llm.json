@@ -1,0 +1,20 @@
+{
+  "run_id": "23ea5a39",
+  "timestamp": "2026-07-05T12:00:54Z",
+  "parsed_output": {
+    "top_level_route": "Account Access",
+    "final_route": "",
+    "action": "clarify",
+    "response_to_customer": "I'm not sure I understand. Can you please provide more information about your bank points and Tokyo flight booking?",
+    "confidence": 0.5,
+    "explanation_short": "Request unclear, unable to confirm route",
+    "route_tree_used": true
+  },
+  "raw_output": "{\n  \"top_level_route\": \"Account Access\",\n  \"final_route\": \"\",\n  \"action\": \"clarify\",\n  \"response_to_customer\": \"I'm not sure I understand. Can you please provide more information about your bank points and Tokyo flight booking?\",\n  \"confidence\": 0.5,\n  \"explanation_short\": \"Request unclear, unable to confirm route\",\n  \"route_tree_used\": false\n}",
+  "provider": "ollama",
+  "model": "llama3.2",
+  "latency_seconds": 5.523,
+  "route_tree_used": true,
+  "route_valid": true,
+  "error": null
+}

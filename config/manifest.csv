@@ -1,0 +1,13 @@
+scenario_id,audio_path,expected_route,expected_action,stress_type,notes
+A001,input_audio/A001_lost_card_clean.wav,Card Services > Lost or Stolen Card,route,clean_intent,Simple lost card route
+A002,input_audio/A002_fraud_clean.wav,Card Services > Fraud or Suspicious Transaction,route_or_escalate,clean_intent,Simple suspicious charge route
+A003,input_audio/A003_failed_transfer_clean.wav,Transfers and Payments > Failed Transfer,route,clean_intent,Simple failed transfer route
+A004,input_audio/A004_locked_account_clean.wav,Account Access > Locked Account,route,clean_intent,Simple locked account route
+A005,input_audio/A005_atm_withdrawal_clean.wav,Deposits and ATM > ATM Withdrawal Issue,route,clean_intent,Simple ATM withdrawal issue
+A006,input_audio/A006_card_vague.wav,Card Services,clarify,vague_intent,Should ask card-related clarification
+A007,input_audio/A007_payment_missing_info.wav,Transfers and Payments,clarify,missing_information,Should ask what type of payment failed
+A008,input_audio/A008_card_sibling_confusion.wav,Card Services,clarify,sibling_route_confusion,Should distinguish declined card vs suspicious transaction
+A009,input_audio/A009_multi_intent_lost_card_fraud.wav,Human Escalation > Safety or High-Risk Issue,escalate,multi_intent_high_risk,Lost card plus possible fraud
+A010,input_audio/A010_out_of_scope.wav,Out of Scope > Unsupported Service,offer_human_or_fallback,out_of_scope,Unsupported flight booking request
+A011,input_audio/A011_natural_spoken_disfluent.wav,Transfers and Payments > Failed Transfer,route_or_clarify,spoken_disfluency,Natural hesitation and filler words
+A012,input_audio/A012_numbers_and_account_words.wav,Transfers and Payments > Scheduled Transfer,route_or_clarify,stt_sensitive_numbers,Contains date and account-ending numbers

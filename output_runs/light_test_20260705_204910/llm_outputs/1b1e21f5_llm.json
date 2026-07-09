@@ -1,0 +1,11 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Purchase Concerns\",\n  \"final_route\": \"Suspicious Transaction\",\n  \"action\": \"Trigger Suspicious Transaction Queue\",\n  \"response_to_customer\": \"I'm sorry to hear that you saw some unexpected purchases on your card. Can you tell me more about what happened yesterday and when you first noticed the issue?\",\n  \"confidence\": 0.9,\n  \"explanation_short\": \"Lack of specific details in the complaint suggests a potential security threat, warranting further investigation.\"\n}",
+  "parsed_output": {
+    "top_level_route": "Purchase Concerns",
+    "final_route": "Suspicious Transaction",
+    "action": "Trigger Suspicious Transaction Queue",
+    "response_to_customer": "I'm sorry to hear that you saw some unexpected purchases on your card. Can you tell me more about what happened yesterday and when you first noticed the issue?",
+    "confidence": 0.9,
+    "explanation_short": "Lack of specific details in the complaint suggests a potential security threat, warranting further investigation."
+  }
+}

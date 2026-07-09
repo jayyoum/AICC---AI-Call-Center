@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Deposits and ATM\",\n  \"final_route\": \"Deposits and ATM > ATM Withdrawal Issue\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"Can you please confirm your account number and the exact amount you were trying to withdraw?\",\n  \"confidence\": 0.8,\n  \"explanation_short\": \"Customer reported issue with ATM withdrawal, but account was charged.\",\n  \"route_tree_used\": false\n}",
+  "parsed_output": {
+    "top_level_route": "Deposits and ATM",
+    "final_route": "Deposits and ATM > ATM Withdrawal Issue",
+    "action": "route",
+    "response_to_customer": "Can you please confirm your account number and the exact amount you were trying to withdraw?",
+    "confidence": 0.8,
+    "explanation_short": "Customer reported issue with ATM withdrawal, but account was charged.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

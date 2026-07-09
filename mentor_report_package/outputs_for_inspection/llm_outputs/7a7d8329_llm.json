@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Out of Scope\",\n  \"final_route\": \"Out of Scope > Unsupported Service\",\n  \"action\": \"offer_human_or_fallback\",\n  \"response_to_customer\": \"I'm happy to help with banking-related questions. However, it seems your issue doesn't fall under our standard routing categories. Would you like to speak with a human agent for further assistance?\",\n  \"confidence\": 0.0,\n  \"explanation_short\": \"Request was too vague and ambiguous to determine a specific route.\",\n  \"route_tree_used\": false\n}",
+  "parsed_output": {
+    "top_level_route": "Out of Scope",
+    "final_route": "Out of Scope > Unsupported Service",
+    "action": "offer_human_or_fallback",
+    "response_to_customer": "I'm happy to help with banking-related questions. However, it seems your issue doesn't fall under our standard routing categories. Would you like to speak with a human agent for further assistance?",
+    "confidence": 0.0,
+    "explanation_short": "Request was too vague and ambiguous to determine a specific route.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

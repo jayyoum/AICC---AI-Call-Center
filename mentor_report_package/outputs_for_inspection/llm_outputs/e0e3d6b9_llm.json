@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Account Access\",\n  \"final_route\": \"Locked Account\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"We apologize for the inconvenience. Your account has been locked due to excessive login attempts. Please contact us at your earliest convenience so we can assist you in resetting your password and accessing your account.\",\n  \"confidence\": 0.8,\n  \"explanation_short\": \"The customer's request matches the description of a locked account, which is handled by the Account Access route tree.\",\n  \"route_tree_used\": false\n}",
+  "parsed_output": {
+    "top_level_route": "Account Access",
+    "final_route": "Locked Account",
+    "action": "route",
+    "response_to_customer": "We apologize for the inconvenience. Your account has been locked due to excessive login attempts. Please contact us at your earliest convenience so we can assist you in resetting your password and accessing your account.",
+    "confidence": 0.8,
+    "explanation_short": "The customer's request matches the description of a locked account, which is handled by the Account Access route tree.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": false
+}

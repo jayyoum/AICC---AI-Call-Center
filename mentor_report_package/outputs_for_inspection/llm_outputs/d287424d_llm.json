@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Account Access\",\n  \"final_route\": \"\",\n  \"action\": \"clarify\",\n  \"response_to_customer\": \"I'm happy to help you with changing your contact information. Can you please tell me a little bit more about what you'd like to change?\",\n  \"confidence\": 0.9,\n  \"explanation_short\": \"Customer requested to report lost debit card, but request was vague and didn't specify exact issue.\",\n  \"route_tree_used\": false\n}",
+  "parsed_output": {
+    "top_level_route": "Account Access",
+    "final_route": "",
+    "action": "clarify",
+    "response_to_customer": "I'm happy to help you with changing your contact information. Can you please tell me a little bit more about what you'd like to change?",
+    "confidence": 0.9,
+    "explanation_short": "Customer requested to report lost debit card, but request was vague and didn't specify exact issue.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Transfers and Payments\",\n  \"final_route\": \"Failed Transfer\",\n  \"action\": \"offer_human_or_fallback\",\n  \"response_to_customer\": \"Can you please provide more details about the failed transfer so I can assist you better?\",\n  \"confidence\": 0.8,\n  \"explanation_short\": \"The customer's issue with a failed transfer was not explicitly covered by any of the provided routes.\",\n  \"route_tree_used\": true\n}",
+  "parsed_output": {
+    "top_level_route": "Transfers and Payments",
+    "final_route": "Failed Transfer",
+    "action": "offer_human_or_fallback",
+    "response_to_customer": "Can you please provide more details about the failed transfer so I can assist you better?",
+    "confidence": 0.8,
+    "explanation_short": "The customer's issue with a failed transfer was not explicitly covered by any of the provided routes.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": false
+}

@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Deposits and ATM\",\n  \"final_route\": \"Deposits and ATM > ATM Withdrawal Issue\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"I'd like to help you with the issue you're experiencing with your ATM withdrawal. Can you please provide more details about what happened?\",\n  \"confidence\": 0.8,\n  \"explanation_short\": \"ATM withdrawal issue is a clear match for this route.\",\n  \"route_tree_used\": true\n}",
+  "parsed_output": {
+    "top_level_route": "Deposits and ATM",
+    "final_route": "Deposits and ATM > ATM Withdrawal Issue",
+    "action": "route",
+    "response_to_customer": "I'd like to help you with the issue you're experiencing with your ATM withdrawal. Can you please provide more details about what happened?",
+    "confidence": 0.8,
+    "explanation_short": "ATM withdrawal issue is a clear match for this route.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

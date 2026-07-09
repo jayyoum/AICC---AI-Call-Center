@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Card Services\",\n  \"final_route\": \"\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"I'd be happy to help you book a flight to Tokyo. Can you please tell me your bank card details so I can check on how many points you have available?\",\n  \"confidence\": 0.9,\n  \"explanation_short\": \"Request for banking information matches Card Services route.\",\n  \"route_tree_used\": true\n}",
+  "parsed_output": {
+    "top_level_route": "Card Services",
+    "final_route": "",
+    "action": "route",
+    "response_to_customer": "I'd be happy to help you book a flight to Tokyo. Can you please tell me your bank card details so I can check on how many points you have available?",
+    "confidence": 0.9,
+    "explanation_short": "Request for banking information matches Card Services route.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

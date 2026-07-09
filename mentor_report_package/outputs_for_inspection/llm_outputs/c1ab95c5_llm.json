@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Card Services\",\n  \"final_route\": \"\",\n  \"action\": \"clarify\",\n  \"response_to_customer\": \"Can you please provide more information about what's happening with your card?\",\n  \"confidence\": 0.0,\n  \"explanation_short\": \"Request was vague and ambiguous.\",\n  \"route_tree_used\": false\n}",
+  "parsed_output": {
+    "top_level_route": "Card Services",
+    "final_route": "",
+    "action": "clarify",
+    "response_to_customer": "Can you please provide more information about what's happening with your card?",
+    "confidence": 0.0,
+    "explanation_short": "Request was vague and ambiguous.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

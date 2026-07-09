@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Card Services\",\n  \"final_route\": \"Card Services > Lost or Stolen Card\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"Please provide us with your account number so we can assist you in replacing your card.\",\n  \"confidence\": 0.9,\n  \"explanation_short\": \"Customer reported lost debit card, which is a common issue that requires replacement.\",\n  \"route_tree_used\": true\n}",
+  "parsed_output": {
+    "top_level_route": "Card Services",
+    "final_route": "Card Services > Lost or Stolen Card",
+    "action": "route",
+    "response_to_customer": "Please provide us with your account number so we can assist you in replacing your card.",
+    "confidence": 0.9,
+    "explanation_short": "Customer reported lost debit card, which is a common issue that requires replacement.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

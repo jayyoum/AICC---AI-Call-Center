@@ -1,0 +1,16 @@
+{
+  "run_id": "03516a13",
+  "timestamp": "2026-07-05T11:33:24Z",
+  "transcript": "I want to book a flight to Tokyo and use my bank points for the ticket.",
+  "provider": "faster-whisper",
+  "model_size": "base.en",
+  "latency_seconds": 0.557,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.68,
+      "text": "I want to book a flight to Tokyo and use my bank points for the ticket."
+    }
+  ],
+  "error": null
+}

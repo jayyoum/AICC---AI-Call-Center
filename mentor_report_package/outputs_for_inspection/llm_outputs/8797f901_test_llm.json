@@ -1,0 +1,20 @@
+{
+  "run_id": "8797f901",
+  "timestamp": "2026-07-05T12:01:00Z",
+  "parsed_output": {
+    "top_level_route": "Account Access",
+    "final_route": "",
+    "action": "clarify",
+    "response_to_customer": "I'd be happy to help you with changing your contact information. Can you please provide me with the new contact details?",
+    "confidence": 0.5,
+    "explanation_short": "Request for contact information not directly related to a specific issue or problem.",
+    "route_tree_used": true
+  },
+  "raw_output": "{\n  \"top_level_route\": \"Account Access\",\n  \"final_route\": \"\",\n  \"action\": \"clarify\",\n  \"response_to_customer\": \"I'd be happy to help you with changing your contact information. Can you please provide me with the new contact details?\",\n  \"confidence\": 0.5,\n  \"explanation_short\": \"Request for contact information not directly related to a specific issue or problem.\",\n  \"route_tree_used\": false\n}",
+  "provider": "ollama",
+  "model": "llama3.2",
+  "latency_seconds": 5.767,
+  "route_tree_used": true,
+  "route_valid": true,
+  "error": null
+}

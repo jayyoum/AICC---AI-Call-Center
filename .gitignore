@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+!config/*.example.json
+output/
+input_audio/
+input_text/
+models/
+application_default_credentials.json
+web_uploads/
+*.webm
+*.wav
+*.mp3

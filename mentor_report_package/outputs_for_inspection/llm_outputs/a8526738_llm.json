@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Card Services\",\n  \"final_route\": \"Fraud or Suspicious Transaction\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"I'd like to investigate a potential fraud transaction on your account. Can you please provide more information about the suspicious transaction?\",\n  \"confidence\": 0.8,\n  \"explanation_short\": \"Customer mentions seeing a strange transaction and a declined card, indicating possible card security risk.\",\n  \"route_tree_used\": true\n}",
+  "parsed_output": {
+    "top_level_route": "Card Services",
+    "final_route": "Fraud or Suspicious Transaction",
+    "action": "route",
+    "response_to_customer": "I'd like to investigate a potential fraud transaction on your account. Can you please provide more information about the suspicious transaction?",
+    "confidence": 0.8,
+    "explanation_short": "Customer mentions seeing a strange transaction and a declined card, indicating possible card security risk.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": false
+}

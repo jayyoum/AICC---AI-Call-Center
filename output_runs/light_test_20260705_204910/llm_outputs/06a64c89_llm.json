@@ -1,0 +1,11 @@
+{
+  "raw_output": "{\"top_level_route\": \"\", \"final_route\": \"book_flight\", \"action\": \"book_flight_request\", \"response_to_customer\": \"I'd be happy to help you book a flight to Tokyo. Can you please provide me with your booking reference number or confirm the dates you're looking to travel?\", \"confidence\": 0.9, \"explanation_short\": \"No route tree provided, using general routing for flight-related inquiries.\"}",
+  "parsed_output": {
+    "top_level_route": "",
+    "final_route": "book_flight",
+    "action": "book_flight_request",
+    "response_to_customer": "I'd be happy to help you book a flight to Tokyo. Can you please provide me with your booking reference number or confirm the dates you're looking to travel?",
+    "confidence": 0.9,
+    "explanation_short": "No route tree provided, using general routing for flight-related inquiries."
+  }
+}

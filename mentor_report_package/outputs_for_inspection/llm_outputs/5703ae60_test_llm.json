@@ -1,0 +1,20 @@
+{
+  "run_id": "5703ae60",
+  "timestamp": "2026-07-05T12:00:37Z",
+  "parsed_output": {
+    "top_level_route": "Account Access",
+    "final_route": "",
+    "action": "clarify",
+    "response_to_customer": "Can you please provide more information about what you mean by lost your debit card?",
+    "confidence": 0.0,
+    "explanation_short": "Request is too vague to determine a specific final route.",
+    "route_tree_used": true
+  },
+  "raw_output": "{\n  \"top_level_route\": \"Account Access\",\n  \"final_route\": \"\",\n  \"action\": \"clarify\",\n  \"response_to_customer\": \"Can you please provide more information about what you mean by lost your debit card?\",\n  \"confidence\": 0.0,\n  \"explanation_short\": \"Request is too vague to determine a specific final route.\",\n  \"route_tree_used\": false\n}",
+  "provider": "ollama",
+  "model": "llama3.2",
+  "latency_seconds": 2.475,
+  "route_tree_used": true,
+  "route_valid": true,
+  "error": null
+}

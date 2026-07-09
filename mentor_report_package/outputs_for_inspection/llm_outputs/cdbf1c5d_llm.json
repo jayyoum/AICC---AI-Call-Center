@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Transfers and Payments\",\n  \"final_route\": \"Scheduled Transfer\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"We can help you reschedule your transfer. Can you please provide the new date and time?\",\n  \"confidence\": 0.9,\n  \"explanation_short\": \"Customer requested to change scheduled transfer for July 15th.\",\n  \"route_tree_used\": true\n}",
+  "parsed_output": {
+    "top_level_route": "Transfers and Payments",
+    "final_route": "Scheduled Transfer",
+    "action": "route",
+    "response_to_customer": "We can help you reschedule your transfer. Can you please provide the new date and time?",
+    "confidence": 0.9,
+    "explanation_short": "Customer requested to change scheduled transfer for July 15th.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": false
+}

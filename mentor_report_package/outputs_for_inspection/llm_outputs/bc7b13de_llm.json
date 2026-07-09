@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Account Access\",\n  \"final_route\": \"\",\n  \"action\": \"clarify\",\n  \"response_to_customer\": \"\",\n  \"confidence\": 0.0,\n  \"explanation_short\": \"\",\n  \"route_tree_used\": false\n}",
+  "parsed_output": {
+    "top_level_route": "Account Access",
+    "final_route": "",
+    "action": "clarify",
+    "response_to_customer": "",
+    "confidence": 0.0,
+    "explanation_short": "",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

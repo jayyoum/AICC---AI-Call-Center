@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Transfers and Payments\",\n  \"final_route\": \"Failed Transfer\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"I apologize for the issue with your transfer. Can you please try again or contact us for assistance?\",\n  \"confidence\": 0.8,\n  \"explanation_short\": \"The customer reported a failed transfer from checking to savings.\",\n  \"route_tree_used\": true\n}",
+  "parsed_output": {
+    "top_level_route": "Transfers and Payments",
+    "final_route": "Failed Transfer",
+    "action": "route",
+    "response_to_customer": "I apologize for the issue with your transfer. Can you please try again or contact us for assistance?",
+    "confidence": 0.8,
+    "explanation_short": "The customer reported a failed transfer from checking to savings.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": false
+}

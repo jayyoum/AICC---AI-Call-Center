@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Account Access\",\n  \"final_route\": \"\",\n  \"action\": \"clarify\",\n  \"response_to_customer\": \"I'm not sure I understand what you're trying to say. Can you please provide more details about your banking issue?\",\n  \"confidence\": 0.5,\n  \"explanation_short\": \"Request is vague and could be related to multiple routes.\",\n  \"route_tree_used\": false\n}",
+  "parsed_output": {
+    "top_level_route": "Account Access",
+    "final_route": "",
+    "action": "clarify",
+    "response_to_customer": "I'm not sure I understand what you're trying to say. Can you please provide more details about your banking issue?",
+    "confidence": 0.5,
+    "explanation_short": "Request is vague and could be related to multiple routes.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

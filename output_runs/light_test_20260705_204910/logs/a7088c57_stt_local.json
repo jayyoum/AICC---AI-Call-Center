@@ -1,0 +1,16 @@
+{
+  "run_id": "a7088c57",
+  "timestamp": "2026-07-05T11:32:52Z",
+  "transcript": "Something weird happened with my card, and I am not sure what kind of help I need.",
+  "provider": "faster-whisper",
+  "model_size": "base.en",
+  "latency_seconds": 0.544,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.88,
+      "text": "Something weird happened with my card, and I am not sure what kind of help I need."
+    }
+  ],
+  "error": null
+}

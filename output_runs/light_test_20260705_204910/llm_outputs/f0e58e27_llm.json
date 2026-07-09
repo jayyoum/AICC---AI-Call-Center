@@ -1,0 +1,11 @@
+{
+  "raw_output": "{\"top_level_route\": \"\", \"final_route\": \"general_card_issue\", \"action\": \"trigger general card issue script\", \"response_to_customer\": \"I apologize, but I'm not sure what's going on with your card. Can you please tell me more about what happened?\", \"confidence\": 0.9, \"explanation_short\": \"Lack of route tree information leads to a general card issue trigger.\"}",
+  "parsed_output": {
+    "top_level_route": "",
+    "final_route": "general_card_issue",
+    "action": "trigger general card issue script",
+    "response_to_customer": "I apologize, but I'm not sure what's going on with your card. Can you please tell me more about what happened?",
+    "confidence": 0.9,
+    "explanation_short": "Lack of route tree information leads to a general card issue trigger."
+  }
+}

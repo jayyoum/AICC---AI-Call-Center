@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AICC Voice Routing Prototype</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>AICC Voice Routing Prototype</h1>
+      <p class="subtitle">
+        A voice demo with two modes: manual turn recording, or a continuous
+        hands-free conversation with browser-side voice activity detection.
+        Each utterance runs through a full speech-to-text &rarr; LLM routing
+        &rarr; text-to-speech round trip. This is not real-time streaming.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Settings</h2>
+      <div class="settings-grid">
+        <label>
+          STT provider
+          <select id="stt-provider">
+            <option value="google" selected>Google Cloud STT</option>
+            <option value="local">Local (faster-whisper)</option>
+          </select>
+        </label>
+
+        <label>
+          TTS provider
+          <select id="tts-provider">
+            <option value="google" selected>Google Cloud TTS</option>
+            <option value="local">Local (Piper)</option>
+          </select>
+        </label>
+
+        <label>
+          Ollama model
+          <input type="text" id="llm-model" value="llama3.2">
+        </label>
+
+        <label>
+          Prompt mode
+          <select id="prompt-mode">
+            <option value="compact_v2" selected>Compact v2 (fast + stress rules)</option>
+            <option value="compact">Compact / Fast</option>
+            <option value="full">Full / Verbose</option>
+          </select>
+        </label>
+
+        <label>
+          Router mode
+          <select id="router-mode">
+            <option value="pre_router" selected>Pre-router + LLM fallback</option>
+            <option value="llm_only">LLM only</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="card recorder-card">
+      <div class="mode-tabs">
+        <button id="tab-manual" class="mode-tab active">Manual Turn Mode</button>
+        <button id="tab-continuous" class="mode-tab">Continuous Conversation Mode</button>
+      </div>
+
+      <div id="manual-controls">
+        <button id="record-button" class="record-button">Start Recording</button>
+      </div>
+
+      <div id="continuous-controls" class="hidden">
+        <button id="conversation-button" class="record-button">Start Conversation</button>
+        <div class="vad-settings">
+          <label>
+            VAD sensitivity
+            <input type="range" id="vad-sensitivity" min="0.005" max="0.08" step="0.005" value="0.02">
+            <span id="vad-sensitivity-value">0.02</span>
+          </label>
+          <label>
+            Silence duration (ms)
+            <input type="number" id="silence-duration" min="300" max="3000" step="100" value="900">
+          </label>
+        </div>
+      </div>
+
+      <p id="status-indicator" class="status status-idle">Idle</p>
+      <p id="state-badge" class="state-badge state-idle hidden">idle</p>
+    </section>
+
+    <section class="card">
+      <h2>Transcript</h2>
+      <p id="transcript-panel" class="panel-text">(no transcript yet)</p>
+    </section>
+
+    <section class="card">
+      <h2>Route Decision</h2>
+      <table class="kv-table">
+        <tbody>
+          <tr><th>Top-level route</th><td id="route-top-level">-</td></tr>
+          <tr><th>Final route</th><td id="route-final">-</td></tr>
+          <tr><th>Action</th><td id="route-action">-</td></tr>
+          <tr><th>Confidence</th><td id="route-confidence">-</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Agent Response</h2>
+      <p id="response-panel" class="panel-text">(no response yet)</p>
+      <audio id="response-audio" controls></audio>
+    </section>
+
+    <section class="card">
+      <h2>Latency (seconds)</h2>
+      <table class="kv-table">
+        <tbody>
+          <tr><th>STT</th><td id="latency-stt">-</td></tr>
+          <tr><th>LLM</th><td id="latency-llm">-</td></tr>
+          <tr><th>TTS</th><td id="latency-tts">-</td></tr>
+          <tr><th>Total</th><td id="latency-total">-</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Conversation History</h2>
+      <div id="history-panel" class="history-panel">
+        <p class="panel-text">No turns yet.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

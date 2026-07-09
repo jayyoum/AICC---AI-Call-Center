@@ -1,0 +1,14 @@
+{
+  "raw_output": "{\n  \"top_level_route\": \"Card Services\",\n  \"final_route\": \"\",\n  \"action\": \"route\",\n  \"response_to_customer\": \"Can you please confirm that you lost your card and would like us to assist with a replacement?\",\n  \"confidence\": 0.5,\n  \"explanation_short\": \"Requesting clarification on lost card before routing.\",\n  \"route_tree_used\": false\n}",
+  "parsed_output": {
+    "top_level_route": "Card Services",
+    "final_route": "",
+    "action": "route",
+    "response_to_customer": "Can you please confirm that you lost your card and would like us to assist with a replacement?",
+    "confidence": 0.5,
+    "explanation_short": "Requesting clarification on lost card before routing.",
+    "route_tree_used": true
+  },
+  "route_tree_used": true,
+  "route_valid": true
+}

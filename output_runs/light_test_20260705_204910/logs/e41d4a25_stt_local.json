@@ -1,0 +1,16 @@
+{
+  "run_id": "e41d4a25",
+  "timestamp": "2026-07-05T11:04:14Z",
+  "transcript": "I lost my card yesterday and now I see two purchases that I did not make",
+  "provider": "faster-whisper",
+  "model_size": "base.en",
+  "latency_seconds": 0.528,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 6.84,
+      "text": "I lost my card yesterday and now I see two purchases that I did not make"
+    }
+  ],
+  "error": null
+}

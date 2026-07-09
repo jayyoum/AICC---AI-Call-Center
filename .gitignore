@@ -13,3 +13,6 @@ web_uploads/
 *.webm
 *.wav
 *.mp3
+output_runs/
+mentor_report_package/
+*.zip

@@ -1,3 +1,0 @@
-combination,run_count,avg_total_latency_seconds,avg_stt_latency_seconds,avg_llm_latency_seconds,avg_tts_latency_seconds,error_count,stt_error_count,llm_error_count,tts_error_count,labeled_run_count,manual_success_rate
-google+google,5,6.202,1.828,3.321,1.053,0,0,0,0,0,
-local+local,4,4.532,0.547,2.933,1.052,0,0,0,0,0,

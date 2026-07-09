@@ -1,5 +1,0 @@
-google-cloud-speech
-google-cloud-texttospeech
-faster-whisper
-piper-tts
-requests

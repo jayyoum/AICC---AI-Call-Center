@@ -4,3 +4,5 @@ faster-whisper
 piper-tts
 requests
 flask
+flask-socketio
+simple-websocket

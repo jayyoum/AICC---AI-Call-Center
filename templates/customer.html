@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#0b1f3a">
+  <title>AICC Banking Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='customer.css') }}">
+</head>
+<body>
+  <main class="call-card">
+    <header class="brand">
+      <div class="brand-mark">🏦</div>
+      <h1>AICC Banking Assistant</h1>
+      <p class="tagline">Tap Start Call and just talk — like a phone call.</p>
+    </header>
+
+    <div id="status" class="status status-ready">
+      <span class="status-dot"></span>
+      <span id="status-text">Ready</span>
+    </div>
+
+    <div class="mode-toggle">
+      <label class="mode-option">
+        <input type="radio" name="capture-mode" value="blob" checked>
+        <span>Continuous (stable)</span>
+      </label>
+      <label class="mode-option">
+        <input type="radio" name="capture-mode" value="streaming">
+        <span>Streaming STT (experimental)</span>
+      </label>
+    </div>
+
+    <div class="call-buttons">
+      <button id="start-call" class="btn btn-start">Start Call</button>
+      <button id="end-call" class="btn btn-end" disabled>End Call</button>
+    </div>
+
+    <!-- Shown only if the browser blocks autoplay of the agent's reply. -->
+    <button id="tap-to-play" class="btn btn-play hidden">🔊 Tap to play agent response</button>
+
+    <section class="live-line" aria-live="polite">
+      <p id="live-interim" class="live-interim"></p>
+      <p id="live-you" class="live-you"></p>
+      <p id="live-agent" class="live-agent"></p>
+    </section>
+
+    <section class="history-wrap">
+      <h2>Conversation</h2>
+      <div id="history" class="history">
+        <p class="history-empty">Your conversation will appear here.</p>
+      </div>
+    </section>
+
+    <!-- Hidden by default; customer UI stays clean. -->
+    <details class="advanced">
+      <summary>Advanced / debug</summary>
+      <div class="advanced-grid">
+        <label>STT
+          <select id="stt-provider">
+            <option value="local" selected>Local</option>
+            <option value="google">Google</option>
+          </select>
+        </label>
+        <label>TTS
+          <select id="tts-provider">
+            <option value="local" selected>Local</option>
+            <option value="google">Google</option>
+          </select>
+        </label>
+        <label>Router
+          <select id="router-mode">
+            <option value="pre_router" selected>Pre-router + LLM</option>
+            <option value="llm_only">LLM only</option>
+          </select>
+        </label>
+        <label>Prompt
+          <select id="prompt-mode">
+            <option value="compact_v2" selected>compact_v2</option>
+            <option value="compact">compact</option>
+            <option value="full">full</option>
+          </select>
+        </label>
+        <label>Model
+          <input type="text" id="llm-model" value="llama3.2">
+        </label>
+        <label>TTS output
+          <select id="tts-output-mode">
+            <option value="file_tts" selected>File (stable)</option>
+            <option value="streaming_tts">Streaming (experimental)</option>
+          </select>
+        </label>
+      </div>
+      <div class="advanced-readout">
+        <div><span>Session ID</span><b id="dbg-session">—</b></div>
+        <div><span>Last route</span><b id="dbg-route">—</b></div>
+        <div><span>Routed by</span><b id="dbg-source">—</b></div>
+        <div><span>Total latency</span><b id="dbg-latency">—</b></div>
+      </div>
+    </details>
+
+    <!-- playsInline is also set in JS; kept minimal / off-screen. -->
+    <audio id="agent-audio" playsinline></audio>
+  </main>
+
+  <!-- Socket.IO client (only needed for the experimental streaming STT mode).
+       Loaded from a CDN; the phone needs internet for this file. If it fails to
+       load, streaming mode is disabled and blob mode still works. -->
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='customer.js') }}"></script>
+  <script src="{{ url_for('static', filename='customer_streaming.js') }}"></script>
+</body>
+</html>

@@ -480,3 +480,11 @@ function escapeHtml(value) {
   div.textContent = value == null ? "" : String(value);
   return div.innerHTML;
 }
+
+// Dev dashboard only: show the full customer-UI URL for the current host,
+// so it's easy to copy onto a phone on the same network.
+const customerHostUrl = document.getElementById("customer-host-url");
+if (customerHostUrl) {
+  customerHostUrl.textContent =
+    window.location.protocol + "//" + window.location.host + "/customer";
+}
